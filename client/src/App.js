@@ -28,7 +28,7 @@ class App extends React.Component {
         azure-mern-demo
         <ul>
           {
-            Object.keys(this.state.bestShows).filter(key => key === '_id').map((cur, idx) => (
+            Object.keys(this.state.bestShows).map((cur, idx) => (
               <li>{cur} - {this.state.bestShows[cur]} </li>
             ))
           }

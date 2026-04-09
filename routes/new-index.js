@@ -2,10 +2,8 @@
 var express = require('express');
 var router = express.Router();
 
-
 var MongoClient = require('mongodb').MongoClient;
-
-var url = process.env.URI || "mongodb+srv://opeyemi:BecY8gOMdu0NczFY@cluster0.cvkut70.mongodb.net/?appName=Cluster0";
+var url = "mongodb+srv://opeyemi:BecY8gOMdu0NczFY@cluster0.cvkut70.mongodb.net/?appName=Cluster0";
 
 
 router.get('/', (req, res, next) => {
